@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -69,8 +69,8 @@
     <div class="topbar">
       <div class="badge">Pack CO2Capacity & CarbonCapacity — disponible à l’acquisition</div>
       <div class="lang">
-        <button id="btn-fr" aria-pressed="true">FR</button>
-        <button id="btn-en" aria-pressed="false">EN</button>
+        <button id="btn-fr" aria-pressed="false">FR</button>
+        <button id="btn-en" aria-pressed="true">EN</button>
       </div>
     </div>
 
@@ -259,7 +259,7 @@
       document.querySelectorAll('[data-en]').forEach(n=>n.hidden=(lang!=='en'));
       frBtn.setAttribute('aria-pressed',String(lang==='fr')); enBtn.setAttribute('aria-pressed',String(lang==='en'));
       document.documentElement.lang=lang;};
-    frBtn.addEventListener('click',()=>show('fr')); enBtn.addEventListener('click',()=>show('en')); show('fr');
+    frBtn.addEventListener('click',()=>show('fr')); enBtn.addEventListener('click',()=>show('en')); show('en');
   </script>
 </body>
 </html>
